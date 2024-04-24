@@ -49,3 +49,50 @@ SSH command to connect to instance
 ssh -J guest@146.152.232.8 ubuntu@100.82.223.198
 
 Please note that in most cases the username above will be correct, however please ensure that you read your instance usage instructions to ensure that the instance owner has not changed the default instance username.
+
+
+--------------------------
+Install/Open VS Code
+Install extension - Remote - SSH
+After installation press Fn+F1 and type remote ssh --> select  Add a new host --> Enter ssh connection from intel compute instance ---> select first option with user folder location---> click on connect in popup --At the right bottom you can see ssh connected--->> click on that
+In VS Code click on Remote Explorer, you will see the SSH there click on it.
+Click on Open File at centre of your screen ---> you will see /home/ubuntu/
+
+**Configuring VSCode**
+On your local machine, open VSCode.
+
+If not installed, click on the extension icon in the sidebar and search for Remote - SSH. Install it.
+
+Press F1 and type in Remote - SSH: Add New SSH Host. Choose it from the dropdown.
+
+Return to the IDC instance and click How to Connect. This will provide the necessary SSH connection command.
+
+Paste the SSH command into VSCode's connection prompt. Choose an SSH config file to update (the first option usually works).
+
+In the appearing pop-up, click Connect.
+
+Select Linux when asked for the remote host platform.
+
+If you have an SSH Key password, enter it twice. If not, simply hit continue twice.
+
+Once you complete these steps, You should now have VSCode operating on the IDC remote host.
+
+**VSCode Remote Folder Access**
+In VSCode, go to the file explorer on the left and click Open Folder.
+
+Allow the opening of a folder on the remote host by choosing default options.
+
+You should now have VSCode operating on the Intel Developer Cloud remote host.
+
+Cloning the Course Repository
+In the terminal, run: git clone https://github.com/intel/certified-developer
+
+Use the file tree to peruse the repository, modify files, or execute scripts.
+
+A terminal can be opened within VSCode to run scripts.
+
+Some course materials utilize VSCode's port forwarding for prototypes and front-end runs on your local browser.
+
+
+![image](https://github.com/sumitsaxena-git/intel_mlops/assets/58607740/21b9ad3a-3dc2-4df2-9fe9-06f49ed66053)
+
